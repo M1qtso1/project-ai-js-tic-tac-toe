@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Kółko i Krzyżyk</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Kółko i Krzyżyk</h1>
+
+        <div id="mode-select">
+            <label for="mode">Tryb gry:</label>
+            <select id="mode">
+                <option value="player">Gracz vs Gracz</option>
+                <option value="ai">Gracz vs Komputer</option>
+            </select>
+
+            <label for="size">Rozmiar planszy:</label>
+            <select id="size">
+                <option value="3">3x3</option>
+                <option value="4">4x4</option>
+                <option value="5">5x5</option>
+            </select>
+
+            <button onclick="startGame()">Start</button>
+        </div>
+
+        <div id="game" style="display:none;">
+            <div id="board"></div>
+            <p id="status"></p>
+            <div class="buttons">
+                <button onclick="resetGame()">Nowa gra</button>
+                <button onclick="changeMode()">Zmień tryb</button>
+            </div>
+            <div class="scoreboard">
+                <p><strong>Wyniki:</strong></p>
+                <p>X: <span id="scoreX">0</span></p>
+                <p>O: <span id="scoreO">0</span></p>
+                <p>Remisy: <span id="scoreDraw">0</span></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

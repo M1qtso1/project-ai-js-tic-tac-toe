@@ -1,0 +1,56 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+#board {
+    display: grid;
+    gap: 5px;
+    justify-content: center;
+    margin: 20px auto;
+}
+
+.cell {
+    background: #fff;
+    border: 2px solid #444;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    user-select: none;
+    aspect-ratio: 1 / 1;
+}
+
+.winner {
+    background-color: #c4f0c5;
+}
+
+button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+select {
+    margin: 0 10px;
+    padding: 5px;
+}
+
+.scoreboard {
+    margin-top: 20px;
+    font-size: 1rem;
+}
+
+.buttons {
+    margin-top: 10px;
+}
